@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7f4ef" />
+  <meta name="description" content="Khadijah Wears — thoughtful pieces for wherever life takes you. Discover considered everyday style, made to move with you." />
+  <title>Khadijah Wears — A little more you</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">A little treat for your first order — take 10% off with <strong>HELLOKW</strong><button class="announcement-close" aria-label="Dismiss announcement">×</button></div>
+  <header class="site-header">
+    <button class="icon-btn mobile-menu" aria-label="Open navigation" id="menuToggle"><span>☰</span></button>
+    <a class="wordmark" href="#home" aria-label="Khadijah Wears home">khadijah <i>wears</i><small>THOUGHTFULLY, ALWAYS.</small></a>
+    <nav class="main-nav" id="mainNav"><a href="#shop">Shop all</a><a href="#collections">Collections</a><a href="#story">Our story</a><a href="#journal">The journal</a></nav>
+    <div class="header-actions"><button class="icon-btn" id="searchToggle" aria-label="Search">⌕</button><button class="icon-btn account-btn" aria-label="Your account" id="accountBtn">♙</button><button class="cart-trigger" id="cartOpen" aria-label="Open shopping bag">Bag <span class="cart-count">0</span></button></div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy"><p class="eyebrow">THE SOFT LIFE, WELL DRESSED</p><h1>Wear what<br />feels like <em>you.</em></h1><p class="hero-text">Easy, considered pieces for all the versions of you. Made for real life, and every little moment in between.</p><a class="button button-dark" href="#shop">Meet your new favourites <span>↗</span></a><div class="hero-note"><span class="note-line"></span><span>Thoughtfully made<br />with you in mind</span></div></div>
+      <div class="hero-visual"><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1500&q=85" alt="Woman wearing a flowing neutral-toned outfit in warm afternoon light" /><div class="hero-sticker">MADE FOR<br /><em>your every day</em> ✳</div><span class="image-credit">THE EVERYDAY EDIT · VOL. 01</span></div>
+      <div class="hero-index">01 — 03</div>
+    </section>
+
+    <div class="perks"><span>✳ Made to move with you</span><span>✳ A little luxury, every day</span><span>✳ Designed with intention</span><span>✳ Loved from Lagos, everywhere</span></div>
+
+    <section class="section collections" id="collections"><div class="section-heading"><div><p class="eyebrow">FIND YOUR FEEL</p><h2>A good place <em>to start.</em></h2></div><a class="text-link" href="#shop">Explore all pieces <span>↗</span></a></div><div class="collection-grid">
+      <a class="collection-card collection-tall" href="#shop" data-category-link="Dresses"><img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=900&q=82" alt="Soft white summer dress"/><span class="collection-label">THE DRESS EDIT <b>Easy does it ↗</b></span></a>
+      <a class="collection-card" href="#shop" data-category-link="Sets"><img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=850&q=82" alt="Tailored neutral outfit"/><span class="collection-label">SETS & SEPARATES <b>Put together, effortlessly ↗</b></span></a>
+      <a class="collection-card" href="#shop" data-category-link="Tops"><img src="https://images.unsplash.com/photo-1551163943-3f6a855d1153?auto=format&fit=crop&w=850&q=82" alt="Relaxed everyday top"/><span class="collection-label">LITTLE EXTRAS <b>The finishing touch ↗</b></span></a>
+    </div></section>
+
+    <section class="section shop-section" id="shop"><div class="section-heading shop-heading"><div><p class="eyebrow">THE PIECES YOU'LL REACH FOR</p><h2>Considered <em>favourites.</em></h2></div><a class="text-link desktop-link" href="#shop">Shop the edit <span>↗</span></a></div>
+      <div class="shop-tools"><div class="filters" role="group" aria-label="Filter by category"><button class="filter active" data-filter="All">All pieces</button><button class="filter" data-filter="Dresses">Dresses</button><button class="filter" data-filter="Tops">Tops</button><button class="filter" data-filter="Sets">Sets</button><button class="filter" data-filter="Accessories">Accessories</button></div><label class="sort-label">Sort <select id="sortSelect"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></label></div>
+      <div class="search-panel" id="searchPanel"><input id="searchInput" type="search" placeholder="Find something lovely…" aria-label="Search products"><button id="searchClose" aria-label="Close search">×</button></div>
+      <div class="product-grid" id="productGrid"></div><p class="no-results" id="noResults" hidden>Nothing here just yet. Try another search or category.</p>
+      <div class="center-action"><button class="button button-outline" id="loadMore">Explore the collection <span>↗</span></button></div>
+    </section>
+
+    <section class="story-band" id="story"><div class="story-image"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1100&q=85" alt="Woman in a flowing dress in the late afternoon"/></div><div class="story-copy"><p class="eyebrow">A NOTE FROM KHADIJAH</p><h2>Clothes that let<br />you <em>be yourself.</em></h2><p>Khadijah Wears began with a simple thought: getting dressed should feel like coming home to yourself. We make pieces that meet you where you are — soft on your skin, easy in your day, and always, unmistakably you.</p><a class="text-link" href="#journal">A little more about us <span>↗</span></a><span class="story-mark">kw.</span></div></section>
+
+    <section class="quote-section" id="journal"><p class="eyebrow">NOT JUST WHAT YOU WEAR</p><blockquote>“I put it on and somehow<br />it just <em>felt like me.</em>”</blockquote><p class="quote-credit">— AMARA, KW COMMUNITY</p><div class="quote-dots"><span class="active"></span><span></span><span></span></div></section>
+
+    <section class="newsletter"><div><p class="eyebrow">LETTERS FROM US TO YOU</p><h2>A little note.<br /><em>A little something.</em></h2><p>New things, styling notes, and 10% off your first order. Only the good stuff.</p></div><form id="newsletterForm"><label for="emailInput">Your email address</label><div class="email-field"><input type="email" id="emailInput" placeholder="you@example.com" required><button aria-label="Subscribe">↗</button></div><small id="newsletterMessage">By subscribing, you agree to receive occasional notes from us.</small></form></section>
+  </main>
+  <footer class="site-footer"><div class="footer-top"><a class="wordmark footer-logo" href="#home">khadijah <i>wears</i><small>THOUGHTFULLY, ALWAYS.</small></a><p>For wherever life takes you.<br />Made with love, in Lagos.</p><div class="footer-links"><a href="#shop">Shop all</a><a href="#story">Our story</a><a href="#">Shipping & returns</a><a href="#">Contact us</a></div><div class="social-links"><a href="#" aria-label="Instagram">ig ↗</a><a href="#" aria-label="TikTok">tk ↗</a></div></div><div class="footer-bottom"><span>© 2025 Khadijah Wears. Made for you.</span><span>Privacy · Terms · Nigeria (NGN ₦)</span></div></footer>
+
+  <div class="overlay" id="overlay"></div><aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag"><div class="drawer-header"><h2>Your bag <span class="drawer-count">(0)</span></h2><button class="icon-btn" id="cartClose" aria-label="Close bag">×</button></div><div class="shipping-progress"><p id="shippingText">You're ₦75,000 away from free delivery</p><div class="progress-track"><span id="progressBar"></span></div></div><div class="cart-items" id="cartItems"></div><div class="cart-empty" id="cartEmpty"><span>✳</span><h3>Your bag is taking a little breather.</h3><p>Fill it with something lovely.</p><button class="button button-dark" id="continueShopping">Keep browsing</button></div><div class="drawer-footer" id="drawerFooter"><div class="subtotal"><span>Subtotal</span><strong id="cartSubtotal">₦0</strong></div><p>Shipping and taxes calculated at checkout.</p><button class="button button-dark checkout-btn" id="checkoutBtn">Continue to checkout <span>↗</span></button><button class="text-link continue-link" id="continueShopping2">Keep browsing</button></div></aside>
+  <dialog class="quick-view" id="quickView"><button class="quick-close" id="quickClose" aria-label="Close">×</button><div id="quickContent"></div></dialog>
+  <dialog class="account-modal" id="accountModal"><button class="quick-close" id="accountClose" aria-label="Close">×</button><p class="eyebrow">WELCOME BACK</p><h2>Your corner<br /><em>of the world.</em></h2><form id="accountForm"><label>Email address<input type="email" required placeholder="you@example.com"></label><label>Password<input type="password" required placeholder="Your password"></label><button class="button button-dark">Sign in <span>↗</span></button></form><p class="account-note">New around here? <a href="#newsletterForm">Join the KW family</a></p></dialog>
+  <script src="script.js"></script>
+</body>
+</html>
